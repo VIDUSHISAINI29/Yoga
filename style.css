@@ -1,0 +1,991 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-1-fourth {
+    width: 25%;
+}
+
+.white-color {
+    color: #fff;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.circle_border {
+    border-radius: 50%;
+}
+
+.curosr {
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.main_poster {
+    background-image: url('Yoga_assets/asset 54.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 91vh;
+    position: relative;
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.main_poster_content {
+    background-color: rgba(15, 15, 15, 0.461);
+    height: 91vh;
+}
+
+.navbar {
+    border-bottom: 1px solid #c4c3c1;
+}
+
+.font {
+    font-size: 12px;
+}
+
+.nav_part1 {
+    width: 45%;
+    font-weight: 500;
+    gap: 25px;
+}
+
+.nav_part1 li {
+    padding: 28px 5px;
+    transition: 0.2s ease;
+}
+
+.transiton {
+    transition: 0.2s ease;
+}
+
+.home {
+    margin-left: 20px;
+}
+
+.nav_part1 li:hover,
+.home_dropdown li:hover,
+.lang_down_position li:hover {
+    color: #fc410e;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.home_dropdown li:hover {
+    padding-left: 20px;
+}
+
+.nav_part2 {
+    width: 55%;
+    padding: 5px;
+}
+
+.icon {
+    width: 125px;
+    padding: 1px;
+}
+
+.nav2_items {
+    margin-left: 300px;
+}
+
+.lang span {
+    margin-left: 10px;
+}
+
+.lang {
+    padding: 5px 6px;
+}
+
+.consult_btn {
+    padding: 11px 22px;
+    border: none;
+    background-color: #ee9169;
+    margin-left: 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.consult_btn:hover {
+    background-color: #d3693c;
+    color: #d9d1e7;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.lang:hover {
+    cursor: pointer;
+}
+
+.home_dropdown {
+    padding: 2px;
+    background-color: #151d28;
+    min-width: 230px;
+    position: absolute;
+    flex-direction: column;
+}
+
+.page_down_position {
+    animation-name: page;
+    animation-duration: 0.4s;
+    top: 76px;
+    left: -40px;
+    display: none;
+    z-index: 1000;
+}
+
+.blog_down_position {
+    animation-name: page;
+    animation-duration: 0.4s;
+    top: 76px;
+    left: -30px;
+    display: none;
+}
+
+.lang_down_position {
+    width: 9%;
+    padding: 2px;
+    background-color: #151d28;
+    top: 36px;
+    left: -50px;
+    position: absolute;
+    flex-direction: column;
+    min-width: 150px;
+    display: none;
+}
+
+.systempage_down_position {
+    animation-name: page;
+    animation-duration: 0.4s;
+    top: 76px;
+    left: -20px;
+    display: none;
+}
+
+.home_dropdown li {
+    padding: 7px 7px 7px 15px;
+    transition: 0.2s ease;
+}
+
+.lang_down_position li {
+    padding: 7px 7px 7px 15px;
+    transition: 0.2s ease;
+}
+
+.home_dropdown li:nth-child(1) {
+    margin-top: 10px;
+}
+
+.page_down_position li:nth-child(5) {
+    margin-bottom: 10px;
+}
+
+.systempage_down_position li:nth-child(8) {
+    margin-bottom: 10px;
+}
+
+.blog_down_position li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+@keyframes page {
+    from {
+        top: 90px;
+        opacity: 0.4;
+    }
+
+    to {
+        top: 76px;
+        opacity: 1;
+    }
+}
+
+.triangle {
+    width: 18px;
+    background-color: #151d28;
+    height: 18px;
+    position: absolute;
+    top: 28px;
+    left: 5px;
+    z-index: 100;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.page_relative,
+.system_page_relative,
+.blog_relative,
+.lang_relative {
+    position: relative;
+    display: inline-block;
+}
+
+.page_relative:hover .page_down_position {
+    display: block;
+}
+
+.system_page_relative:hover .systempage_down_position {
+    display: block;
+}
+
+.blog_relative:hover .blog_down_position {
+    display: block;
+}
+
+.lang_relative:hover .lang_down_position {
+    display: block;
+}
+
+.lang_relative:hover .triangle {
+    display: block;
+}
+
+.hero_section {
+    height: 81vh;
+}
+
+.prev,
+.next {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    transition: 0.5s ease;
+    display: none;
+    animation-name: icon;
+    animation-duration: 0.8s;
+}
+
+@keyframes icon {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.prev {
+    margin-left: 30px;
+}
+
+.next {
+    margin-right: 30px;
+}
+
+.icon:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+    background-color: #ee9169;
+}
+
+.hero_section:hover .icon {
+    display: flex;
+    transition: 0.5s ease;
+}
+
+.large_text {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.small_text {
+    font-size: 16px;
+    display: block;
+    width: 85%;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.first_image_text {
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cell1,
+.cell3 {
+    width: 25%;
+}
+
+.cell3 {
+    justify-content: end;
+}
+
+.browse_btn {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.browse_btn:hover {
+    background-color: #151d28;
+    color: white;
+}
+
+.second_hero_section {
+    background-color: #fcfcfd;
+    justify-content: center;
+    height: 85vh;
+    position: relative;
+}
+.hero2_bg_icon1{
+    position: absolute;
+    left: 70px;
+    top: 100px;
+    height: 90px;
+}
+.hero2_bg_icon2{
+    position: absolute;
+    left: 810px;
+    top: 150px;
+    height: 120px;
+}
+.hero2_bg_icon3{
+    position: absolute;
+    left: 1060px;
+    top: 368px;
+    height: 160px;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    transform-origin: center;
+}
+@keyframes move{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.hero2_content {
+    width: 60%;
+}
+
+.hero2_text_container {
+    width: 60%;
+}
+
+.hero2_media_container {
+    padding: 4px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.yoga_mat {
+    width: 280px;
+    height: 360px;
+    border-radius: 4px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    z-index: 1;
+}
+
+.hero2_img2 {
+    width: 185px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+}
+
+.yoga_teaching {
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero2_heading {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin-top: 90px;
+}
+
+.hero2_small_text {
+    color: #404447;
+    font-size: 12px;
+}
+
+.hero2_icon_content {
+    padding: 5px 0px;
+}
+
+.hero2_icon_margin {
+    margin-top: 40px;
+}
+
+.icon_between_margin {
+    margin-top: 25px;
+}
+
+.heart_icon {
+    width: 25%;
+    border: 1px solid #e38e6a;
+    transition: 0.2s ease;
+}
+
+.heart_text {
+    flex-direction: column;
+}
+
+.heart_text_head {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heart_text {
+    margin-left: 20px;
+}
+
+.heart_small_text {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.heart_icon:hover {
+    cursor: pointer;
+}
+
+.down_earth:hover svg path {
+    fill: #fff;
+}
+
+.down_earth:hover,
+.flower:hover {
+    background: #ee9169;
+    transition: 0.2s ease;
+}
+
+.flower:hover svg g {
+    stroke: #fff;
+    transition: 0.2s ease;
+}
+
+.hero_section3 {
+    height: 73vh;
+}
+
+.hero_section3_content {
+    width: 70%;
+    height: 70%;
+    flex-direction: column;
+}
+.hero3_poster{
+    height: 73vh;
+    background-image: url('Yoga_assets/asset 56.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero3_backicon1{
+    position: absolute;
+    top: 70px;
+    right: 120px;
+}
+.hero3_backicon2{
+    position: absolute;
+    bottom: 70px;
+    left: 60px;
+}
+.hero3_backicon1 img{
+    height: 90px;
+}
+.hero3_backicon2 img{
+    height: 80px;
+}
+.hero3_text {
+    width: 60%;
+    text-align: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.hero3_heading {
+    margin-top: 20px;
+}
+
+.hero3_cards {
+    margin-top: 20px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.hero3_card1 {
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.card_icon {
+    height: 7vh;
+    transition: 0.2s ease;
+}
+
+.card_icon2 {
+    height: 7vh;
+    transition: 0.2s ease;
+}
+
+.hero3_card_text {
+    margin-left: 0px;
+
+}
+
+.hero3_card1:hover {
+    color: #fff;
+    background-color: #ee9169;
+    transition: 0.2s ease;
+}
+
+.hero3_card1:hover .hero3_card_text {
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.hero3_card1:hover .card_icon svg path {
+    stroke: #fff;
+    transition: 0.2s ease;
+}
+
+.hero3_card1:hover .card_icon2 svg path {
+    fill: #fff;
+}
+
+.hero4_yoga_images {
+    height: 140vh;
+    position: relative;
+}
+.hero4_backicon1{
+    position: absolute;
+    top: 330px;
+    right: 60px;
+}
+.hero4_backicon1 img{
+    height: 80px;
+}
+.hero4_backicon2{
+    position: absolute;
+    bottom: 260px;
+    left: 80px;
+}
+.hero4_backicon2 img{
+    height: 65px;
+}
+
+
+.hero4_inner_container {
+    width: 60%;
+    height: 110vh;
+    flex-direction: column;
+}
+
+.hero4_image_div {
+    width: 265px;
+    overflow: hidden;
+    height: 36vh;
+    border-radius: 5px;
+}
+
+.hero4_image_div img {
+    width: 275px;
+    height: 36vh;
+    border-radius: 5px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero4_image_div:hover img {
+    transform: scale(1.09);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image_box {
+    width: 100%;
+
+}
+
+.trr {
+    background-color: #fff;
+}
+
+.hero4_image2_div {
+    width: 415px;
+    overflow: hidden;
+    height: 38vh;
+    border-radius: 5px;
+}
+
+.hero4_image2 {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.hero4_image {
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.hero4_image2_div img {
+    height: 38vh;
+    border-radius: 5px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero4_image2_div:hover img {
+    transform: scale(1.09);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero4_small_text {
+    display: block;
+    width: 85%;
+    font-weight: 500;
+    color: #404447;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.view_more_btn {
+    margin-top: 60px;
+}
+
+.hero4_text {
+    width: 60%;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero5_public_reviews {
+    height: 90vh;
+}
+.hero5_backposter{
+    height: 90vh;
+    background-image: url('Yoga_assets/asset 56.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero5_backicon1{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+}
+.hero5_backicon1 img{
+    height: 80px;
+}
+.hero5_backicon2{
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+.hero5_backicon2 img{
+    height: 270px;
+}
+.hero5_backicon3{
+    position: absolute;
+    bottom: 20px;
+   right: 50px;
+}
+.hero5_backicon3 img{
+    height: 180px;
+}
+.hero5_backicon4{
+    position: absolute;
+    bottom: 100px;
+   left: 100px;
+}
+.hero5_backicon4 img{
+    height: 60px;
+}
+.hero5_inner_container {
+    height: 70vh;
+    width: 60%;
+    position: relative;
+    flex-direction: column;
+}
+
+.inverted_comma {
+    margin-top: 20px;
+}
+
+.comma_icon {
+    height: 30px;
+}
+
+.rating {
+    width: 10%;
+    gap: 3px;
+    margin-top: 15px;
+}
+
+.review_slider {
+    flex-direction: column;
+}
+
+.public_review_head {
+    color: #fc410e;
+    font-size: 25px;
+}
+
+.public_review {
+    color: #3c3f41;
+}
+.box{
+    justify-content: end;
+right: 20px;
+}
+.box, .box1 {
+    padding: 3px;
+    width: 15%;
+    position: absolute;
+}
+
+.box2 {
+    width: 70%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.review_next, .review_prev {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    transition: 0.5s ease;
+    animation-name: icon;
+    animation-duration: 0.8s;
+}
+
+@keyframes icon {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.box svg path{
+    stroke: #151d28;
+}
+.box1 svg path{
+    fill: #151d28;
+}
+.mover:hover{
+    background-color: #ee9169;
+    cursor: pointer;
+}
+.mover_prev:hover svg path{
+    fill: #fff;
+}
+.mover_next:hover svg path{
+    stroke: #fff;
+}
+.reviewers_photo_container{
+    width: 50%;
+    margin-top: 40px;
+    gap: 20px;
+    justify-content: space-around;
+}
+.reviewers_photo_container img{
+    cursor: pointer;
+}
+.reviewer_photo{
+    height: 50px;
+}
+.reviewer_photo_center{
+    border: 1px solid #d3693c;
+    padding: 4px;
+    height: 95px;
+}
+.reviewer_name{
+    margin: 10px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #222222;
+}
+.box1{
+    left: 20px;
+}
+.hero6_othercentres{
+    background: #f9f9f9;
+    padding: 20px;
+   
+}
+
+.hero6_backicon1{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+}
+.hero6_backicon1 img{
+    height: 80px;
+}
+.hero6_cards_container{
+    width: 65%;
+    padding: 10px;
+    margin: 50px 0px;
+    gap: 10px;
+
+}
+.hero6_img_div{
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 2px #e9e9e9;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero6_img_div:hover img{
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero6_img_div:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.hero6_img_div img{
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero7_backposter{
+    height: 45vh;
+    background-image: url('Yoga_assets/asset 56.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero7_container{
+    height: 30vh;
+    width: 50%;
+    flex-direction: column;
+}
+.mail_container{
+    margin-top: 25px;
+}
+.mail{
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 4px;
+    padding: 11px;
+    outline: none;
+    width: 42%;
+    transition: 0.2s ease;
+}
+.mail:hover{
+    border: 1px solid #d3693c;
+    transition: 0.2s ease;
+}
+.subfooter_container{
+    background-color: #060a10;
+    padding: 80px 12px;
+}
+.subfooter{
+    width: 65%;
+    gap: 20px;
+}
+.subfooter_column1{
+    width: 30%;
+    padding: 2px;
+    margin-right: 40px;
+}
+.subfooter_column2{
+    width: 25%;
+    padding: 2px;
+}
+.foot_logo img{
+    height: 40px;
+}
+.contact_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0px;
+}
+.footer_text_margin2{
+    margin-bottom: 0px;
+}
+.footer_text_margin1{
+    margin-top: 10px;
+}
+
+.grey-color{
+    color: rgb(197, 194, 194);
+}
+.footer_hover:hover{
+    color: #fc410e;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.footer_hover{
+    transition: 0.2s ease;
+}
+.footer{
+    background-color: #151d28;
+    padding: 15px;
+}
+.footer_text{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 500;
+    width: 30%;
+}
+.social_icon{
+width: 55%;
+gap: 10px;
+justify-content: flex-end;
+margin-right: 100px;
+}
+.social_icon_hover{
+  width: 20px;
+  height: 20px;
+}
+.social_icon_hover:hover svg path {
+    fill: #ee9169;
+}
+.social_icon_hover:hover{
+    cursor: pointer;
+}
